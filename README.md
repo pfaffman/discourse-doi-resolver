@@ -2,10 +2,12 @@
 
 DOI resolver for [Discourse](http://discourse.org).
 
-Replaces DOI:<doi> with a link to resolve the DOI.
+Replaces <doi> with a link to resolve the DOI.
 
 Trivial modification of
 [Pirate Speak](https://github.com/discourse/discourse-pirate-speak). 
+
+Thanks to [crossref.org](http://blog.crossref.org/2015/08/doi-regular-expressions.html) for a regex that catches most DOIs.
 
 ## Installation
 
