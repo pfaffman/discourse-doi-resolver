@@ -1,0 +1,4 @@
+plugins:
+  doi_resolver_enabled:
+    default: true
+    client: true
