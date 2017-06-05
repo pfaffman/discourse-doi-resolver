@@ -6,8 +6,9 @@ registerOption((siteSettings, opts) => {
 
 function resolveDOI (text) {
   return text.replace(/([^\/])(10.\d{4,9}\/[-._;()\/:A-Z0-9]+)/gi,
-		      "<a href=\"https:\/\/doi.org/$2\">$1$2</a>");
+		      "$1<a href=\"https:\/\/doi.org/$2\">$2</a>");
 }
+
 export function setup(helper) {
   helper.addPreProcessor(resolveDOI);
 }

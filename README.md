@@ -9,7 +9,7 @@ Trivial modification of
 
 Thanks to [crossref.org](http://blog.crossref.org/2015/08/doi-regular-expressions.html) for a regex that catches most DOIs.
 
-Currently creates siteSettings, but does not honor them.
+Currently creates siteSettings, but does not honor them. PR welcome!
 
 ## Installation
 
