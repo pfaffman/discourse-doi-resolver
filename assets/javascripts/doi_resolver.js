@@ -1,6 +1,6 @@
-function resolveDOI (text) { 
-  return text.replace(/(10.\d{4,9}\/[-._;()\/:A-Z0-9]+)/gi, 
-		      "<a href=\"https:\/\/doi.org/$1\">$1</a>");
+function resolveDOI (text) {
+  return text.replace(/([^\/])(10.\d{4,9}\/[-._;()\/:A-Z0-9]+)/gi,
+		      "$1<a href=\"https:\/\/doi.org/$2\">$2</a>");
 }
 
 Discourse.Dialect.postProcessText(function (text) {
@@ -12,4 +12,3 @@ Discourse.Dialect.postProcessText(function (text) {
   }
   return text;
 });
-
